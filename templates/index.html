@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Movie Recommendation Engine</title>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+		<style>
+		.body ul li{
+			overflow:hidden;
+			background:url(../images/separator.jpg) no-repeat center top;
+			padding:0px 0;
+		}
+		.footer div.connect a#twitter{
+			width:36px;
+			height:28px;
+			display:block;
+			text-indent:-9999px;
+			background:url(Movie/static/images/icons.gif) no-repeat 0 -48px;
+			margin:0 0 0 68px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<img src="{% static 'images/movie.png' %} "> 
+				<ul>
+					<li class="selected"><a href="index.html" style="font-size:25px">Home</a></li>
+					<li><a href="{% static 'list.html' %}" style="font-size:25px">Movies</a></li>
+				</ul>
+			</div>
+			<div class="body">
+				<form action="search" method="get">
+				<div class="topnav" align="center">
+				Enter Movie Name:<input type="text" name="message" placeholder="Search..">
+				</form>
+				</div>
+				<div id="featured">
+					<p>For a Sample Movie, have a look at the list of movies provided in the "Movies" Section .
+					<br>If you do not find a Search for your movie, I will Update the list soon.
+					Sorry for the inconvenience.</p>
+				</div>	
+			<div class="footer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="{%static 'list.html' %}">Movies</a></li>
+				</ul>
+				<p>A Self Made Project By Ataur Rehman</p>
+				<div class="connect">
+					<a href="https://www.facebook.com/ataur.r.rehman.1" id="facebook">facebook</a>
+					<a href="https://www.instagram.com/ataur_10/" id="twitter">twitter</a>
+					<a href="https://www.linkedin.com/in/ataur-rehman-146a24191" id="vimeo">vimeo</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>  
